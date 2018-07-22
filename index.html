@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+  </head>
+  <body>
+    <main>
+      <input v-on:change="onValueChange" :value="currentValue" type="text" />
+      <button v-on:click="send" >Submit</button>
+      <ul>
+        <li v-for="x in data">
+          <button value={i} v-on:click="deleteItem">X</button>
+          <span> {{x}}</span>
+        </li>
+      </ul>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.16/vue.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
